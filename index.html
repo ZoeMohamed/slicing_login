@@ -66,8 +66,9 @@
           name="firstname"
           placeholder="Password"
           class="special-form"
+          id="password"
         />
-        <i class="icon fa-solid fa-eye"></i>
+        <i class="icon fa-solid fa-eye" id="togglePassword"></i>
       </div>
       <div class="row-btnlayout">
         <button type="submit" class="formbtn-styling change-method">
@@ -79,4 +80,18 @@
       </div>
     </form>
   </body>
+  <script>
+    const togglePassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#password");
+
+    togglePassword.addEventListener("click", function () {
+      // toggle the type attribute
+      const type =
+        password.getAttribute("type") === "password" ? "text" : "password";
+      password.setAttribute("type", type);
+
+      // toggle the icon
+      this.classList.toggle("fa-eye-slash");
+    });
+  </script>
 </html>
