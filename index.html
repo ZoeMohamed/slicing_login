@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/884a888d38.js"
+      crossorigin="anonymous"
+    ></script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,11 +36,39 @@
     </div>
     <form action="GET" class="form-layout">
       <div class="row-form">
-        <input type="text" />
-        <input type="text" />
+        <div class="input-container">
+          <input
+            type="text"
+            name="firstname"
+            placeholder="First Name"
+            autocomplete="off"
+          />
+          <i class="icon fa-solid fa-address-card"></i>
+        </div>
+        <div class="input-container">
+          <input type="text" name="lastname" placeholder="Last Name" />
+          <i class="icon fa-solid fa-address-card"></i>
+        </div>
       </div>
-      <input type="text" class="special-form" />
-      <input type="text" class="special-form" />
+      <div class="input-container-big">
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          class="special-form"
+          autocomplete="off"
+        />
+        <i class="icon-big fa-solid fa-envelope"></i>
+      </div>
+      <div class="input-container-big">
+        <input
+          type="password"
+          name="firstname"
+          placeholder="Password"
+          class="special-form"
+        />
+        <i class="icon fa-solid fa-eye"></i>
+      </div>
       <div class="row-btnlayout">
         <button type="submit" class="formbtn-styling change-method">
           <h4 class="text-btn">Change Method</h4>
